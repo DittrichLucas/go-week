@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import twitterLogo from '../twitter.svg'
-import './Login.css';
+import './Login.css'
 
 export default class Login extends Component {
     state = {
         username: '',
-
     }
 
     handleSubmit = (e) => {

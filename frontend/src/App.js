@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
 import Login from './pages/login'
 import Timeline from './pages/timeline'
 
@@ -17,4 +16,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default App

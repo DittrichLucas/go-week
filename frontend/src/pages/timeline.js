@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import api from '../services/api'
 import twitterLogo from '../twitter.svg'
-import './Timeline.css';
+import './Timeline.css'
 import Tweet from '../components/tweet'
 import socket from 'socket.io-client'
 
@@ -23,11 +23,12 @@ export default class Timeline extends Component {
         const io = socket('http://localhost:3000')
 
         io.on('tweet', data => {
-            this.setState({ tweets: [ data, ...this.state.tweets ] })
+            this.setState({ tweets: [data, ...this.state.tweets] })
         })
+        
         io.on('like', data => {
             this.setState({ tweets: this.state.tweets.map(
-                tweet => (tweet._id === data._id ? data : tweet )
+                tweet => (tweet._id === data._id ? data : tweet)
             ) })
         })
     }
@@ -60,7 +61,7 @@ export default class Timeline extends Component {
                     />
                 </form>
                 <ul className='tweet-list'>
-                    { this.state.tweets.map( tweet => 
+                    { this.state.tweets.map(tweet => 
                         <Tweet key={ tweet._id } tweet={ tweet } />
                     )}
                 </ul>

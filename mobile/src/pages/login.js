@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { 
     View,
     TextInput,
@@ -6,7 +6,7 @@ import {
     StyleSheet,
     KeyboardAvoidingView,
     AsyncStorage
-} from 'react-native';
+} from 'react-native'
 import Icons from 'react-native-vector-icons/FontAwesome'
 import { StackActions, NavigationActions } from 'react-navigation'
 
@@ -70,41 +70,41 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: "#FFF"
+        flex: 1,
+        backgroundColor: "#FFF"
     },
   
     content: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      padding: 30
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 30
     },
   
     input: {
-      borderWidth: 1,
-      borderColor: "#DDD",
-      borderRadius: 5,
-      height: 44,
-      paddingHorizontal: 15,
-      alignSelf: "stretch",
-      marginTop: 30
+        borderWidth: 1,
+        borderColor: "#DDD",
+        borderRadius: 5,
+        height: 44,
+        paddingHorizontal: 15,
+        alignSelf: "stretch",
+        marginTop: 30
     },
   
     button: {
-      height: 44,
-      alignSelf: "stretch",
-      marginTop: 10,
-      backgroundColor: "#4BB0EE",
-      borderRadius: 5,
-      justifyContent: "center",
-      alignItems: "center"
+        height: 44,
+        alignSelf: "stretch",
+        marginTop: 10,
+        backgroundColor: "#4BB0EE",
+        borderRadius: 5,
+        justifyContent: "center",
+        alignItems: "center"
     },
   
     buttonText: {
-      color: "#FFF",
-      fontSize: 16,
-      fontWeight: "bold"
+        color: "#FFF",
+        fontSize: 16,
+        fontWeight: "bold"
     }
-  });
+})
   

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './Tweet.css';
+import React, { Component } from 'react'
+import './Tweet.css'
 import like from '../like.svg'
-import api from '../services/api';
+import api from '../services/api'
 
 export default class Tweet extends Component {
     handleLike = async () => {

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from 'mongoose'
 
 const tweetSchema = new mongoose.Schema({
     author: String,
@@ -7,10 +7,10 @@ const tweetSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    createdAt:{
+    createdAt: {
         type: Date,
         default: Date.now
     }
 })
 
-module.exports = mongoose.model('Tweet', tweetSchema)
+export default mongoose.model('Tweet', tweetSchema)

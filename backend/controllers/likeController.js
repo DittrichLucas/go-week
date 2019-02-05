@@ -1,6 +1,6 @@
-const tweet = require('../src/models/tweet')
+import tweet from '../src/models/tweet'
 
-module.exports = {
+export default {
     async store(req, res){
         const findTweet = await tweet.findById(req.params.id)
 
